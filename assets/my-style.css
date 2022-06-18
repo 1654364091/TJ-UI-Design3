@@ -19,3 +19,31 @@
     top:0;
     left:0;
 }
+
+.download-rank-style{
+
+}
+
+.compare-style{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.bar-style{
+    width: 80%;
+    margin: 40px auto;
+    margin-top: 10px;
+
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 0 20px #ffd7c8;
+}
+
+.content-rating-radio-style{
+    padding: 10px 50px;
+
+    margin:auto auto;
+    margin-top: 40px;
+
+    text-align: center;
+}

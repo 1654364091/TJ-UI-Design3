@@ -11,7 +11,7 @@ def div_dropdown(title, content_list, style):
             options=[{'label': i, 'value': i} for i in content_list],
             value=content_list[0]
         )
-    ],style=style)
+    ],className=style)
 
 
 def div_non_animate_graph(title, style):
@@ -19,7 +19,7 @@ def div_non_animate_graph(title, style):
         dcc.Graph(
             id=title,
         )
-    ],style=style)
+    ],className=style)
 
 
 def div_graph(title, style):
@@ -28,10 +28,10 @@ def div_graph(title, style):
             id=title,
             animate=True
         )
-    ],style=style)
+    ],className=style)
 
 
-def div_radio_bar(title,content_list,style):
+def div_radio(title,content_list,style):
     return html.Div([
         dcc.RadioItems(
             id=title,
@@ -39,5 +39,5 @@ def div_radio_bar(title,content_list,style):
             value=content_list[0],
             labelStyle={'padding': '0 20px', 'display': 'inline-block'}
         )
-    ],style=style)
+    ],className=style)
 

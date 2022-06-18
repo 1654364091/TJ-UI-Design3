@@ -169,6 +169,7 @@ def refresh_install_rating_bar(category, type, radio):
 )
 def refresh_rating_review_bar(category, type, radio):
     dff = df[(df['Category'] == category) & (df['Content Rating'] == radio) & (df['Type'] == type)]
+    print(df[(df['Content Rating'] == radio)])
 
     reviews = [0, 0, 0, 0, 0, 0]
     ratings = ['0~1', '1~2', '2~3', '3~4', '4~5', '5+']
