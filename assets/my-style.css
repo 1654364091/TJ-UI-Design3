@@ -1,0 +1,21 @@
+.title-style{
+    text-align: center;
+    color: #478eda;
+    font-family: Cambria, serif;
+    max-width: 50%;
+    margin: 40px auto;
+    font-size: 35px;
+    background-color: beige;
+    border-radius: 30px;
+    box-shadow: 0 0 20px #8f2727;
+}
+
+.bg-style{
+    position: fixed;
+    background: linear-gradient(to bottom right, #daffb4, #fff9ed);
+    width: 100vw;
+    height: 100vh;
+    z-index:-2022;
+    top:0;
+    left:0;
+}

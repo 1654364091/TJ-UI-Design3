@@ -1,7 +1,8 @@
 import plotly.graph_objs as go
 import numpy as np
 
-# 通用散点图绘制
+
+# 散点图绘制
 def create_scatter(x_values, x_title, y_values, y_title, text, title):
     return {
         'data': [
@@ -39,6 +40,7 @@ def create_scatter(x_values, x_title, y_values, y_title, text, title):
     }
 
 
+# 饼状图
 def create_pie(label_list,value_list):
     return {
         'data': [go.Pie(
@@ -61,6 +63,8 @@ def create_pie(label_list,value_list):
             )
     }
 
+
+# 折线图
 def create_line_graph(x_values, x_title, y_values, y_title,  title):
     return {
         'data': [{
@@ -92,6 +96,7 @@ def create_line_graph(x_values, x_title, y_values, y_title,  title):
     }
 
 
+# 柱状图
 def create_bar(x_values, x_title, y_values, y_title,  title):
 
     return {
