@@ -97,7 +97,7 @@ def create_line_graph(x_values, x_title, y_values, y_title,  title):
 
 
 # 柱状图
-def create_bar(x_values, x_title, y_values, y_title,  title):
+def create_bar(x_values, x_title, y_values, y_title, title):
 
     return {
         'data': [
@@ -107,6 +107,40 @@ def create_bar(x_values, x_title, y_values, y_title,  title):
                 marker=dict(
                     color="rgb(153,204,102)"
                 )
+            )
+        ],
+        'layout':
+            go.Layout(
+                xaxis={
+                    'title': x_title,
+                },
+                yaxis={
+                    'title': y_title,
+                },
+                title=title,
+                margin={
+                    'l': 130,
+                    'b': 50,
+                    't': 50,
+                    'r': 40
+                },
+                height=500,
+                hovermode='closest')
+    }
+
+
+# 水平柱状图
+def create_bar_h(x_values, x_title, y_values, y_title,text,  title):
+    return {
+        'data': [
+            go.Bar(
+                x=x_values,
+                y=y_values,
+                text=text,
+                marker=dict(
+                    color="rgb(153,204,102)"
+                ),
+                # orientation='h'
             )
         ],
         'layout':
